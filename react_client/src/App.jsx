@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from './components/Nav'
 import HeroSection from './components/HeroSection'
 import Feature from './components/Feature'
+import WorkFlow from './components/WorkFlow'
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
     <HeroSection/>
     </div>
     <Feature/>
+    <WorkFlow />
+
     </>
   )
 }
