@@ -27,26 +27,42 @@ const HeroSection = () => {
           Documentation
         </a>
       </div>
-      <div className="flex mt-10 justify-center">
-        <video
-          autoPlay
-          loop
-          muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
-        >
-          <source src={video1} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video
-          autoPlay
-          loop
-          muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
-        >
-          <source src={video2} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <div className="flex mt-10 justify-center relative">
+  {/* First Video with Animated Border */}
+  <div className="relative w-1/2 mx-2 my-4">
+    {/* Rotating Border */}
+    <div className="absolute inset-0 rounded-lg border-[6px] border-transparent bg-[conic-gradient(from_var(--border-angle),theme(colors.orange.800),theme(colors.orange.400),theme(colors.orange.800))] animate-spin-slow"></div>
+    
+    {/* Video */}
+    <video
+      autoPlay
+      loop
+      muted
+      className="relative w-full h-56 rounded-lg bg-transparent"
+    >
+      <source src={video1} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  {/* Second Video with Animated Border */}
+  <div className="relative w-1/2 mx-2 my-4">
+    {/* Rotating Border */}
+    <div className="absolute inset-0 rounded-lg border-[6px] border-transparent bg-[conic-gradient(from_var(--border-angle),theme(colors.orange.800),theme(colors.orange.400),theme(colors.orange.800))] animate-spin-slow"></div>
+    
+    {/* Video */}
+    <video
+      autoPlay
+      loop
+      muted
+      className="relative w-full h-56 rounded-lg bg-transparent"
+    >
+      <source src={video2} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
     </div>
   );
 };
