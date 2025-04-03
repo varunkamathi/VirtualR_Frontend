@@ -3,14 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      animation: {
-        borderSpin: "borderSpin 4s linear infinite",
-      },
       keyframes: {
-        borderSpin: {
-          "0%": { transform: "rotate(0deg)" },
-          "100%": { transform: "rotate(360deg)" },
+        'border-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)',
+          },
         },
+      },
+      animation: {
+        'border-spin': 'border-spin 7s linear infinite',
       },
     },
   },

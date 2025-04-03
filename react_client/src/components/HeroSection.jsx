@@ -27,42 +27,25 @@ const HeroSection = () => {
           Documentation
         </a>
       </div>
-      <div className="flex mt-10 justify-center relative">
-  {/* First Video with Animated Border */}
-  <div className="relative w-1/2 mx-2 my-4">
-    {/* Rotating Border */}
-    <div className="absolute inset-0 rounded-lg border-[6px] border-transparent bg-[conic-gradient(from_var(--border-angle),theme(colors.orange.800),theme(colors.orange.400),theme(colors.orange.800))] animate-spin-slow"></div>
-    
-    {/* Video */}
-    <video
-      autoPlay
-      loop
-      muted
-      className="relative w-full h-56 rounded-lg bg-transparent"
-    >
-      <source src={video1} type="video/mp4" />
-      Your browser does not support the video tag.
+      <div className="flex mt-10 justify-center">
+      <div class="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-px">
+    <video  autoPlay
+          loop
+          muted
+           class=" rounded-lg bg-black border border-neutral-800">
+            <source src={video1} type="video/mp4" />
     </video>
   </div>
-
-  {/* Second Video with Animated Border */}
-  <div className="relative w-1/2 mx-2 my-4">
-    {/* Rotating Border */}
-    <div className="absolute inset-0 rounded-lg border-[6px] border-transparent bg-[conic-gradient(from_var(--border-angle),theme(colors.orange.800),theme(colors.orange.400),theme(colors.orange.800))] animate-spin-slow"></div>
-    
-    {/* Video */}
-    <video
-      autoPlay
-      loop
-      muted
-      className="relative w-full h-56 rounded-lg bg-transparent"
-    >
-      <source src={video2} type="video/mp4" />
-      Your browser does not support the video tag.
+  <div class="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-px">
+    <video  autoPlay
+          loop
+          muted
+           class=" rounded-lg bg-black border border-neutral-800">
+            <source src={video2} type="video/mp4" />
     </video>
   </div>
-</div>
-
+        
+      </div>
     </div>
   );
 };
