@@ -7,7 +7,6 @@
   color-scheme: dark;
 }
 
-@tailwind utilities;
 
 @property --border-angle {
   inherits: false;

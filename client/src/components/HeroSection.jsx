@@ -4,7 +4,7 @@ import video2 from "../assets/video2.mp4";
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
-      <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         VirtualR build tools
         <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
           {" "}
@@ -28,7 +28,7 @@ const HeroSection = () => {
         </a>
       </div>
       <div className="flex mt-10 justify-center">
-      <div class="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-px">
+      <div class="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-1">
     <video  autoPlay
           loop
           muted
@@ -36,7 +36,7 @@ const HeroSection = () => {
             <source src={video1} type="video/mp4" />
     </video>
   </div>
-  <div class="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-px">
+  <div class="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-1">
     <video  autoPlay
           loop
           muted
