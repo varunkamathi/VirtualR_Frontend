@@ -1,7 +1,7 @@
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 
-const HeroSection = () => {
+const HeroSection = ({onSignInClick}) => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
        <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
@@ -19,6 +19,7 @@ const HeroSection = () => {
       <div className="flex justify-center my-10">
         <a
           href="#"
+          onClick={onSignInClick}
           className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
         >
           Start for free
@@ -28,19 +29,19 @@ const HeroSection = () => {
         </a>
       </div>
       <div className="flex mt-10 justify-center">
-      <div class="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-1">
+      <div className="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-0.5">
     <video  autoPlay
           loop
           muted
-           class=" rounded-lg bg-black border border-neutral-800">
+           className=" rounded-lg bg-black border border-neutral-800">
             <source src={video1} type="video/mp4" />
     </video>
   </div>
-  <div class="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-1">
+  <div className="w-1/2 mx-2 my-6 animate-rotate-border transition-all duration-500 ease-out transform-3d rounded-lg cursor-pointer hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-orange-500 to-black from-80% via-90% to-100% p-0.5">
     <video  autoPlay
           loop
           muted
-           class=" rounded-lg bg-black border border-neutral-800">
+           className=" rounded-lg bg-black border border-neutral-800">
             <source src={video2} type="video/mp4" />
     </video>
   </div>
