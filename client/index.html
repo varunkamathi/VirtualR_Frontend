@@ -4,8 +4,63 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VirtualR</title>
+
+    <!-- ⭐ SEO Title -->
+    <title>VirtualR | Blockchain Verified Document & CV Platform</title>
+
+    <!-- ⭐ SEO Description -->
+    <meta
+      name="description"
+      content="VirtualR is a blockchain-powered demo platform for verified CVs, certificates, work history, and digital document authentication."
+    />
+
+    <!-- ⭐ Open Graph (Social / WhatsApp / LinkedIn Preview) -->
+    <meta property="og:title" content="VirtualR | Verified Document Platform" />
+    <meta
+      property="og:description"
+      content="A demo blockchain verification platform showcasing verified CVs, certificates, and document authentication."
+    />
+    <meta property="og:image" content="https://virtual-r-frontend.vercel.app/logo.png" />
+    <meta property="og:url" content="https://virtual-r-frontend.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- ⭐ Twitter Preview -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VirtualR | Blockchain Verification Demo" />
+    <meta
+      name="twitter:description"
+      content="Try the VirtualR blockchain-based verification system for digital CVs and certificates."
+    />
+    <meta name="twitter:image" content="https://virtual-r-frontend.vercel.app/logo.png" />
+
+    <!-- ⭐ STRUCTURED DATA (Schema JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VirtualR Demo Platform",
+        "url": "https://virtual-r-frontend.vercel.app/",
+        "logo": "https://virtual-r-frontend.vercel.app/logo.png",
+        "description": "A blockchain verification platform demo for verified CVs, certificates, and work history authentication.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@virtualr-demo.com"
+        },
+        "sameAs": [
+          "https://www.linkedin.com",
+          "https://twitter.com",
+          "https://facebook.com"
+        ]
+      }
+    </script>
+    <!-- ⭐ END SCHEMA -->
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
