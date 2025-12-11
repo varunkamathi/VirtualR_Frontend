@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://virtual-r-frontend.vercel.app/sitemap.xml
